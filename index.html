@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Geolocation APIs</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<style>
+			.hidden { display: none; }
+		</style>
+	</head>
+	<body>
+		<div class="jumbotron">
+			<h1>Maps</h1>
+      <br>
+      <h6> Geolocations of Ashley's <br>favorite restaurant.</h6>
+		</div>
+		<div class="container">
+			<form>
+				<select id="mySelect" class="custom-select">
+					<option selected style="color: lightgrey;">Select a Store Location:</option>
+					<option value="1">Bellevue</option>
+					<option value="2">Capitol Hill</option>
+					<option value="3"> Georgetown</option>
+          <option value="4"> Lynnwood</option>
+				</select>
+			<br>
+			<br>
+			</form>
+			<div id="map1" class="hidden">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.5418787091066!2d-122.17263028482083!3d47.5767012980369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906955531017ad%3A0x7a509443578ed21a!2s12700+SE+38th+St%2C+Bellevue%2C+WA+98006!5e0!3m2!1sen!2sus!4v1494482713682" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div id="map2" class="hidden">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.651646976446!2d-122.3186826848195!3d47.613462895497754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acc2acb6b6d%3A0xef2a7c248859db11!2s1410+12th+Ave%2C+Seattle%2C+WA+98122!5e0!3m2!1sen!2sus!4v1494482782147" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div id="map3" class="hidden">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.217980589849!2d-122.33131158482215!3d47.544086100288304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54904196ae0d2e1f%3A0xec136178fcfa2842!2s6538+4th+Ave+S%2C+Seattle%2C+WA+98108!5e0!3m2!1sen!2sus!4v1494482878814" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+      	<div id="map4" class="hidden">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2678.333742305992!2d-122.2812298848111!3d47.83312748029581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490050c177faf2b%3A0xb16bb7603522e0d2!2s3333+184th+St+SW%2C+Lynnwood%2C+WA+98037!5e0!3m2!1sen!2sus!4v1494483135994" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<br>
+		<script src="script.js"></script>
+	</body>
+</html>
